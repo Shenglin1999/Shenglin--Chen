@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shenglin Chen</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        /* Background container */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+   
+    </style>
+
+
+</head>
+<body>
+
+    <div class="background">
+        <img src="dajian.jpg" alt="Background Image">
+    </div>
+  
+    <div class="top-banner"></div>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio1">Paintings</a></li>
+            <li><a href="#portfolio2">3D Works</a></li>
+            <li><a href="#portfolio3">Animation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me section -->
+    <section id="about" class="content-section about-section">
+        <div class="about-container">
+            <!-- Image on the left -->
+            <div class="about-image">
+                <img src="Me.JPG" alt="About Me Image">
+            </div>
+            <!-- Text on the right -->
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>My name is Shenglin Chen, and I specialize in painting, 3D animation, and the fusion of technology and art as a medium of expression. By combining traditional painting techniques and creative concepts with emerging technologies, I strive to create innovative and meaningful works that resonate with a modern audience. My goal is to spark new ideas and emotional connections by exploring the intersection of classical artistry and cutting-edge advancements.
+
+                    In a world where technology evolves at a breakneck pace, I aim to ensure that art remains an integral part of this progression. Through my work, I encourage others to envision a harmonious relationship between art and technology, fostering a deeper appreciation for how these fields can complement and inspire one another in our ever-changing world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section 1 -->
+    <section id="portfolio1" class="content-section">
+        <h1>Paintings</h1>
+        <br>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="堕天使.JPG" alt="Project 1">
+                <h3>Fallen Angel Excerpt</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="大象.JPG" alt="Project 2">
+                <h3>Elephant</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="B174E8033F23C55330BC173B1FF11FB7.png" alt="Project 3">
+                <h3>Quarreling cats</h3>
+            </div>
+
+            <!-- Hidden items -->
+            <div class="portfolio-item hidden">
+                <img src="猫.jpg" alt="Project 4">
+                <h3>Cat</h3>
+            </div>
+            <div class="portfolio-item hidden">
+                <img src="lion.jpg" alt="Project 5">
+                <h3>Lion</h3>
+            </div>
+            <div class="portfolio-item hidden">
+                <img src="rt.JPG" alt="Project 5">
+                <h3>Frightened Hamster</h3>
+            </div>
+            <div class="portfolio-item hidden">
+                <img src="mancat.JPG" alt="Project 5">
+                <h3>Man With Cat</h3>
+            </div>
+            <div class="portfolio-item hidden">
+                <img src="joney.JPG" alt="Project 5">
+                <h3>The Shining</h3>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <button class="see-more" onclick="toggleSeeMore('portfolio1')">See More</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section 2 -->
+    <section id="portfolio2" class="content-section">
+        <h1>3D Works</h1>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="IMG_4573.JPG" alt="Project 1">
+                <h3>Breaking Out 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="Weixin Image_20241201044649.jpg" alt="Project 2">
+                <h3>Breaking Out 2</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="IMG_4574(1).JPG" alt="Project 3">
+                <h3>Breaking Out3</h3>
+            </div>
+                        <!-- Hidden items -->
+                        <div class="portfolio-item hidden">
+                            <img src="IMG_3778.JPG" alt="Project 4">
+                            <h3>Sword 1</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="dajian2.gif" alt="Project 5">
+                            <h3>Sword 2</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="motuo.jpg" alt="Project 6">
+                            <h3>Luminous Motorcycle Jewelry Stand</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="发光摩托.JPG" alt="Project 7">
+                            <h3>Luminous Motorcycle Jewelry Stand</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="IMG_3744.JPG" alt="Project 8">
+                            <h3>Ceramic Puppy</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="狗雕.JPG" alt="Project 9">
+                            <h3>Woodcarving Puppy</h3>
+                        </div>
+                        <div class="portfolio-item hidden">
+                            <img src="box bot.gif" alt="Project 10">
+                            <h3>Mask</h3>
+                        </div>
+                    </div>
+                    <div class="see-more-container">
+                        <button class="see-more" onclick="toggleSeeMore('portfolio2')">See More</button>
+                    </div>
+                </section>
+
+    <!-- Portfolio Section 3 Videos -->
+    <section id="portfolio3" class="content-section">
+        <h1>Animation</h1>
+        <div class="youtube-videos">
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/8cqz-MKyWew" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Bounce Ball</h3>
+            </div>
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/5zXwkwqzzrs" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Dominoes</h3>
+            </div>
+            
+            <!-- Hidden items -->
+            <div class="video-item hidden">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/0hlVWO1zPMQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Touch</h3>
+            </div>
+            <div class="video-item hidden">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/_bemLIvNTpc" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <h3>Outer Space Traveler</h3>
+            </div>
+        </div>
+        <div class="see-more-container">
+            <button class="see-more" onclick="toggleSeeMore('portfolio3')">See More</button>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="content-section">
+        <h1>Contact</h1>
+        <p>E-mail： shenglinchen99@gmail.com</p>
+    </section>
+
+    
+    <script>
+        function toggleSeeMore(portfolioId) {
+            const section = document.getElementById(portfolioId);
+            const hiddenItems = section.querySelectorAll('.hidden');
+            hiddenItems.forEach(item => {
+                item.style.display = item.style.display === 'block' ? 'none' : 'block';
+            });
+            const button = section.querySelector('.see-more');
+            button.innerText = button.innerText === 'See More' ? 'See Less' : 'See More';
+        }
+    </script>
+</body>
+</html>
